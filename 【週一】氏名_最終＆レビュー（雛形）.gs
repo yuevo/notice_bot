@@ -9,7 +9,7 @@ function reviewWeekBotPost() {
   // 最後に「command + s」で保存しましょう！
 
   // WebhookURLを追加
-  let postUrl = "https://hooks.slack.com/services/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";　
+  let postUrl = "WebhookURLを追加";　
   // botを投入したいチャンネル名を追加
   let postChannel = "#hoge_ch"; 
   // 使用するシートを取得
@@ -143,7 +143,7 @@ function reviewWeekBotPost() {
       
     // シフト残数あり
     if (last_shift_total > 0) {
-      sendHttpPost_('<@U010TR72L72>さん、こんにちは！週刊通知botです！\
+      sendHttpPost_('<@slackのユーザID>さん、こんにちは！週刊通知botです！\
                   \n現在の目標までの道のりです！頑張っていきましょう！ \
                   \n\n *' + name +'* さん【残シフト（通話） *' + last_shift + '* 日, 残シフト（レビュー） *' + last_shift_review + '* 日, 残シフト外 *' + last_shift_gai + '* 日】 \
                   \n実働時間（通話）： 残り *' + last_time + '* 時間\
@@ -160,7 +160,7 @@ function reviewWeekBotPost() {
 
     // シフト残数なし
     } else if (last_shift_total == 0 ) {
-      sendHttpPost_('<@U010TR72L72>さん、こんにちは！週刊通知botです！\
+      sendHttpPost_('<@slackのユーザID>さん、こんにちは！週刊通知botです！\
                       \n今月のシフトはもうございません。お疲れさまでした！\
                       \n\n【最終結果】\
                       \n\n *' + name +'* さん \
